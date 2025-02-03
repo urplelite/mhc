@@ -1,0 +1,68 @@
+[debug] [2025-02-02T15:26:41.930Z] ----------------------------------------------------------------------
+[debug] [2025-02-02T15:26:41.931Z] Command:       /home/urplelite/.nvm/versions/node/v22.13.1/bin/node /home/urplelite/.nvm/versions/node/v22.13.1/bin/firebase init database
+[debug] [2025-02-02T15:26:41.932Z] CLI Version:   13.29.3
+[debug] [2025-02-02T15:26:41.932Z] Platform:      linux
+[debug] [2025-02-02T15:26:41.932Z] Node Version:  v22.13.1
+[debug] [2025-02-02T15:26:41.932Z] Time:          Sun Feb 02 2025 10:26:41 GMT-0500 (Eastern Standard Time)
+[debug] [2025-02-02T15:26:41.932Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-02T15:26:42.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-02T15:26:42.026Z] > authorizing via signed-in user (dev@madhareconsulting.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/urplelite/dev/repos/mhc
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-02T15:26:42.028Z] Using project from CLI flag: mhc-website-designs
+[debug] [2025-02-02T15:26:42.028Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:42.028Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:42.029Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs [none]
+[debug] [2025-02-02T15:26:42.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs 200
+[debug] [2025-02-02T15:26:42.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs {"projectId":"mhc-website-designs","projectNumber":"964452208316","displayName":"MHC WEBSITE DESIGNS","name":"projects/mhc-website-designs","resources":{"hostingSite":"mhc-website-designs"},"state":"ACTIVE","etag":"1_4ba92686-0766-42ec-a54e-1c2c2d5254ca"}
+[info] i  Using project mhc-website-designs (MHC WEBSITE DESIGNS) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2025-02-02T15:26:42.487Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:42.487Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:42.487Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com [none]
+[debug] [2025-02-02T15:26:42.487Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mhc-website-designs
+[debug] [2025-02-02T15:26:43.019Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com 200
+[debug] [2025-02-02T15:26:43.020Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com [omitted]
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2025-02-02T15:26:43.020Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:43.020Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:43.020Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2025-02-02T15:26:43.020Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/mhc-website-designs
+[debug] [2025-02-02T15:26:43.808Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2025-02-02T15:26:43.809Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2025-02-02T15:26:53.812Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:53.812Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:53.812Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com [none]
+[debug] [2025-02-02T15:26:53.812Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/mhc-website-designs
+[debug] [2025-02-02T15:26:54.308Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com 200
+[debug] [2025-02-02T15:26:54.308Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mhc-website-designs/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2025-02-02T15:26:54.308Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:54.309Z] Checked if tokens are valid: true, expires at: 1738512549198
+[debug] [2025-02-02T15:26:54.309Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs [none]
+[debug] [2025-02-02T15:26:54.688Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs 200
+[debug] [2025-02-02T15:26:54.688Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mhc-website-designs {"projectId":"mhc-website-designs","projectNumber":"964452208316","displayName":"MHC WEBSITE DESIGNS","name":"projects/mhc-website-designs","resources":{"hostingSite":"mhc-website-designs"},"state":"ACTIVE","etag":"1_4ba92686-0766-42ec-a54e-1c2c2d5254ca"}
